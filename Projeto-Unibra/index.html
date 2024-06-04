@@ -1,0 +1,195 @@
+<html lang="en">
+  <title>Pizzaria</title>
+<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<script async src="script.js"></script>
+<header class="content">
+  <div class="logo_header">
+    <a href="index.html"><img src="logo.jpg" alt="Logo"></a>
+  </div>
+  <nav>
+    <ul class="list-menu">
+      <li><a href="#home">Inicio</a></li>
+      <li><a href="#cardapio">Cardápio</a></li>
+      <li><a href="#contatos">Contatos</a></li>
+    </ul>
+  </nav>
+  <div class="menu-toggle">
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+  </div>
+</header>
+
+<main>
+  <section class="first-section" id="home">
+
+    <div class="conteudo-principal">
+      <h1>Pizzaria Sabor Divino </h1>
+      <h2>AS MELHORES E AS MAIS RECHEADAS</h2>
+      <h2 id="pizza2">PIZZAS DA REGIÃO</h2>
+      <div class="btn">
+        <button class="pedido">Faça seu pedido abaixo!</button>
+      </div>
+    </div>
+  </section>
+
+  <!--Inicio-->
+  <section class="sobre-nos" id="sobrenos">
+    <div class="main">
+      <div class="contentsobre">
+        <h2>Sobre nós</h2>
+        <p>A Pizzaria Sabor Divino é uma das melhores opções para quem procura por pizzas deliciosas na zona norte de Recife.
+
+            Fundada em 2024, a pizzaria é especializada em pizzas com massa fina e crocante, preparadas com ingredientes frescos e de alta qualidade.
+            
+            Com uma grande variedade de sabores, a Pizzaria Sabor Divino oferece opções para todos os gostos, desde as tradicionais até as mais elaboradas, todas preparadas com muito capricho e atenção aos detalhes.
+            
+            Uma das grandes vantagens do Sabor Divino é a possibilidade de retirar as pizzas diretamente no balcão da loja ou pedir pelo serviço de delivery, garantindo que os clientes possam desfrutar de suas pizzas preferidas no conforto de suas casas.
+            
+            Seja para uma refeição rápida ou um jantar especial, a Pizzaria Sabor Divino é uma excelente escolha para quem busca por pizzas de alta qualidade e sabor inigualável.
+            Venha experimentar!</p>
+      </div>
+      <div class="img-pizzaria">
+        <img src="restaurante.jpg" alt="Pizzaria">
+      </div>
+    </div>
+  </section>
+  <!--Cardapio-->
+  <section class="cardapio" id="cardapio"><h2>Cardápio</h2><div class="itens-cardapio">
+
+    <div><img src="pizzaFrango.jpg" alt="Pizza De Frango">
+    <div class="info"><h3>Frango</h3>
+    <h4>6 fatias <span>R$35,00</span></h4>
+  <h4>8 fatias <span>R$45,00 </span></h4>
+<H4>12 fatias <span>R$55,00</span></H4>
+<button class="pedir">Pedir agora</button>
+</div>
+</div>
+
+<div><img src="calabresa.jpg" alt="Pizza De Calabresa">
+  
+  <div class="info"><h3>Calabresa</h3>
+  <h4>6 fatias <span>R$35,00</span></h4>
+<h4>8 fatias <span>R$45,00 </span></h4>
+<H4>12 fatias <span>R$55,00</span></H4>
+<button class="pedir">Pedir agora</button></div></div>
+  
+  <div><img src="pizza-a-portuguesa-1-840x480.jpeg" alt="Pizza Portuguesa">
+  
+    <div class="info"><h3>Portuguesa</h3>
+    <h4>6 fatias <span>R$35,00</span></h4>
+  <h4>8 fatias <span>R$45,00 </span></h4>
+  <H4>12 fatias <span>R$55,00</span></H4>
+  <button class="pedir">Pedir agora</button></div></div>
+
+    <div><img src="4queijo.webp" alt="Pizza De Três Queijo">
+  
+      <div class="info"><h3>Quatro Queijos</h3>
+      <h4>6 fatias <span>R$35,00</span></h4>
+    <h4>8 fatias <span>R$45,00 </span></h4>
+    <H4>12 fatias <span>R$55,00</span></H4>
+    <button class="pedir">Pedir agora</button></div></div>
+    <div><img src="camarao.jpg" alt="Pizza De Camarão">
+  
+      <div class="info"><h3>Camarão</h3>
+      <h4>6 fatias <span>R$40,00</span></h4>
+    <h4>8 fatias <span>R$52,00 </span></h4>
+    <H4>12 fatias <span>R$65,00</span></H4>
+    <button class="pedir">Pedir agora</button></div></div>
+    <div><img src="doce.webp" alt="Pizza Doce">
+  
+      <div class="info"><h3>Doce</h3>
+      <h4>6 fatias <span>R$35,00</span></h4>
+    <h4>8 fatias <span>R$45,00 </span></h4>
+    <H4>12 fatias <span>R$55,00</span></H4>
+    <button class="pedir">Pedir agora</button></div></div>
+      </div></section>
+      <!--modal-->
+      <div id="pedidoModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Pedido de Pizza</h2>
+          <form id="pedidoForm">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="Nome" required><br><br>
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="Endereco" required><br><br>
+            <label for="telefone">Telefone:</label>
+            <input type="text" id="tele" name="Telefone" required><br><br>
+            <label for="produto">Produto:</label>
+            <label for="produto">Produto:</label>
+        <input type="text" id="produto" name="produto" readonly><br><br>
+            <h3>Selecione a quantidade de pizzas:</h3>
+            <div class="modalBnt"><button type="button" id="removePizzaButton">-</button>
+              <input type="text" id="quantidadePizzas" name="quantidade" value="1" readonly>
+              <button type="button" id="addPizzaButton">+</button><br>
+              <button class="pedir" type="submit">Pedir</button>
+          </form>
+        </div>
+      </div>
+</main>
+<!--parte final-->
+  <div id="footer_content">
+    <div id="footer_contacts">
+      <img src="logo.jpg" id="logofooter" alt="Pizzaria">
+      <p>Pizzaria , a melhor da região!</p>
+
+      <div id="footer_social_media">
+        <a href="#" target="_blank" class="footer-link" id="instagram">
+          <<i class="bi bi-instagram"></i>
+        </a>
+
+        <a href="#" target="_blank" class="footer-link" id="facebook">
+          <i class="bi bi-facebook"></i>
+        </a>
+
+        <a href="#" class="footer-link" id="whatsapp">
+          <i class="bi bi-whatsapp"></i>
+        </a>
+
+
+        <a href="#" target="_blank" class="footer-link" id="ifood">
+          <img src="ifood.jpg" id="ifood" alt="Ifood">
+        </a>
+      </div>
+    </div>
+
+    <ul class="footer-list">
+      <li>
+        <h3 id="contatos">Contatos</h3>
+      </li>
+      <li>
+        <a href="https://maps.app.goo.gl/ovj9f1ezRd5J3zci7" target="_blank" class="footer-link"><i class="fa-solid fa-location-dot"></i>Localização</a>
+      </li>
+      <li>
+        <a href="" class="footer-link"><i class="fa-solid fa-envelope"></i> mrgamerb9@gmail.com</a>
+      </li>
+      <li>
+        <a href="#" class="footer-link"><i class="bi bi-whatsapp"></i> (81) 98621-7602</a>
+      </li>
+    </ul>
+
+    <ul class="footer-list">
+      <li>
+        <h3 id="linkfooter" class="footermedia">Links Rápidos</h3>
+      </li>
+      <li>
+        <a href="#home" class="footer-link footermedia">Home</a>
+      </li>
+      <li>
+        <a href="#sobrenos" class="footer-link footermedia">Sobre nós</a>
+      </li>
+      <li>
+        <a href="#" class="footer-link footermedia">Cardápio</a>
+      </li>
+    </ul>
+  </div>
+
+  <div id="footer_copyright">
+    &#169
+    Copyright ©2024. Todos os direitos reservados.
+  </div>
+  </footer>
+  <script src="script.js"></script>
+  </html>
